@@ -1,0 +1,28 @@
+*{margin:0;padding:0}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color:#333;
+    opacity: 1.5;
+
+}
+body{
+    color:#333;
+    font-size: 14px;
+}
+.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+.row:before{
+    content:"";
+    display: table;
+
+}
+.row:after{
+    content:"";
+    display: table;
+    clear: both;
+}

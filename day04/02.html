@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{margin:0;padding: 0}
+         .nav{
+            background: pink;
+            font-size: 0;
+            height: 100px;
+        }
+        .row:after{
+            content: " ";
+            display: table;
+            clear: both;
+        }
+        ul{
+            list-style: none;
+            background: red;
+        }
+        li{
+            width: 100px;
+            line-height: 50px;
+            float: left;
+            text-align: center;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            display:block;
+        }
+        a:hover{
+            background: deeppink;
+            color: black;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul class="row">
+            <li><a href="#">首页</a></li>
+            <li><a href="#">售前</a></li>
+            <li><a href="#">售后</a></li>
+        </ul>
+    </div>
+</body>
+</html>

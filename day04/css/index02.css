@@ -1,0 +1,139 @@
+*{margin:0;padding:0}
+
+li{
+    list-style: none;
+    display: inline-block;
+    font-size: 20px;
+}
+.cl1{
+    color:orangered;
+    margin-top: 40px;
+    opacity: 0.5;
+}
+.cl2{
+    margin-top: 40px;
+    opacity: 0.5;
+}
+.form{
+    width: 400px;
+    border:1px solid #eee;
+    margin-left: 1200px;
+    position: absolute;
+    text-align: center;
+    background:#eee;
+    right: 300px;
+    top: 30px;
+    
+}
+.one{
+    opacity: 0.5;
+    margin-top: 40px;
+}
+fieldset{
+    border:none;
+    width: 380px;
+    margin-right: auto;
+    margin-left:auto ;
+    opacity: 0.5;
+}
+.fieldset{
+    border-top: 1px solid #333;
+    margin-top: 100px;
+}
+input{
+    width: 380px;
+    height: 40px;
+    margin-top: 25px;
+}
+.footer a{
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: #333;
+    border-radius: 50%;
+}
+.footer span{
+    position: absolute;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background:url("../images/icons_type.png") no-repeat;
+    left: 50%;
+    top: 50%;
+    margin-left: -9px;
+    margin-top: -9px; 
+   
+}
+.footer .qq{
+    background-position-x:-19px;
+}
+.footer .weibo{
+    background-position-x: -38px;
+}
+.footer .zhifu{
+    width:25px;
+    background-position-x: -57px;
+    margin-left:-12.5px;
+}
+.footer .wechar{
+    width:23px;
+    background-position-x: -84px;
+    margin-left:-11.5px;
+}
+.clas{
+    background: orangered;
+    border:none;
+}
+.img1{
+   background: orangered;
+   margin-top: 20px;
+   float: left;
+   margin-right: 50px;
+}
+.img2{
+    margin-top: 20px;
+
+}
+.p1{
+    margin-top:10px; 
+    font-size: 30px;
+}
+.p2{
+    font-size: 12px;
+    opacity:0.5;
+}
+.head{
+    margin-left: 400px;
+    width: 100%;
+    height: 10px;
+}
+.h2{
+    float: left;
+}
+.h2>.p1{
+    
+    font-size: 30px;
+    float: top;
+} 
+.h2>p2{
+    float:bottom;
+} 
+.cf{
+    margin-top: 100px;
+    height: 600px;
+    position: relative;
+    background: url("../images/banner.png") no-repeat;
+}
+.base{
+    width: 100%;
+    height: 100px;
+   
+}
+.dl{
+    
+    text-align: center;
+}
+
+
+

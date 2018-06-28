@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+     div{
+         width: 100px;
+         height: 100px;
+         background: red;
+             }
+
+
+    </style>
+</head>
+<body>
+    <div id ="test"></div>
+    <script>
+        // element.style.attr 有局限性：智能获取内联样式
+      let test = document.getElementById("test");
+    //   let value = test.style.width;
+    //   test.style.background = "green";
+    //   console.log(value);
+    //1.在 Chrome下获取内部样式表和外部样式表的样式
+    //    grtComputStyle(test,null)[attr]
+    let value = grtComputStyle(test,null).width;
+    
+    </script>
+</body>
+</html>

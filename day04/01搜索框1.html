@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .parent{
+            background: pink;
+            font-size: 0;
+        }
+        a{
+           display: inline-block;
+           font-size: 18px;
+           line-height: 50px;
+           width: 100px; 
+           text-decoration : none;
+           text-align: center;
+        }
+        .parent>a{
+            font-size: 14px;
+        }
+        a:hover{
+            background: deeppink;
+        }
+    </style>
+</head>
+<body>
+    <div class ="parent">
+        <a href="#">首页</a>
+        <a href="#">售前</a>
+        <a href="#">售后</a>
+    </div>
+</body>
+</html>

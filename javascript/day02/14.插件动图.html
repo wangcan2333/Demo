@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src ="../js/sHover.min.js"></script>
+    <style>
+      #item1{
+          overflow: hidden;
+          border:1px solid #333;
+          width: 280px;
+          height: 180px;
+      }
+      .hoverContent{
+          background: #333;
+      }
+    </style>
+</head>
+<body>
+    <div id = "item1" class ="hover">
+        <img id="img1" src="images/01.jpg" alt="">
+        <span id ="intro1" class="hoverContent">
+            <h2>Flowers</h2>
+            <p>Flowers are so inconsisitenet!</p>
+            <button>inconsistent</button>
+        </span>
+    </div>
+    <script>
+        var a = new sHover("hover","hoverContent");
+        a.set({
+            slideSpeed:5,
+            opacityChange:true,
+            opacity:80
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p class="one" id ="p" >hello world</p>
+    <script>
+        // nodeType
+        // 1.元素节点
+        // 2.属性节点
+        // 3.文本节点
+        var p = document.getElementById("p");
+        var eNode = p.nodeType;
+        var tNode = p.firstChild.nodeType;
+        var attrNode = p.getAttributeNode("class").nodeType;
+        console.log(eNode);
+        console.log(tNode);
+        console.log(attrNode);
+    </script>
+</body>
+</html>

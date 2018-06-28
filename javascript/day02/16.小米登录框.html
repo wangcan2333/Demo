@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{margin:0;padding:0}
+    .form{
+        margin-top: 50px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 400px;
+        border :1px solid #eee;
+        box-shadow: 0 0 10px 5px #333;
+    }
+    li{
+        list-style: none;
+        display: inline-block;
+       
+    }
+    ul{
+        line-height: 50px;
+        border:1px solid #eee;
+    }
+    .conten{
+        position: relative;
+        height: 200px;
+    }
+    .conten>div{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    .saoma{
+        display: none;
+    }
+    input{
+        width: 360px;
+        height: 40px;
+       margin-top: 20px; 
+    }
+    .current{
+        color:orangered;
+    }
+
+    </style>
+</head>
+<body >
+ <div class = "form">
+     <ul>
+         <li>账号登录</li>
+         <li>扫码登录</li>
+     </ul>
+    
+    <div class="conten">
+        <div class= "account child">
+            <div><input type="text"></div>
+            <div><input type="password"></div>
+            <div><input type="submit" value ="立即登录 "></div>
+        </div>
+        <div class ="saoma child">
+        <img src="images/01.png" alt="">
+     </div>
+    </div>
+ </div>
+ <script>
+  var lis = document.getElementsByTagName("li");
+  var contents = document.getElementsByClassName("child");
+//   1.遍历li，给每个li一个click事件，给当前项class=current，其他项为“”（空）
+//   2.给每一个li一个index参数
+//   3.让对应参数的contents显示，其他的隐藏
+//  点击li，让证在被点击的class=current。其他的class=“”
+  for(let i = 0;i<lis.length;i++){
+    //   给每一个li一个index属性
+      lis[i].index = i;
+      lis[i].onclick = function(){
+        //   先将所有li的class清空
+          for(let i =0;i<lis.length;i++){
+              lis[i].className= ""; 
+             }
+            // 当前项的li的class=current 
+          this.className = "current";
+            //  将所有的contents隐藏
+          for(let i =0;i<contents.length;i++){
+             contents[i].style.display= "none"
+          }
+        //   只让对应的contents出现
+          contents[this.index].style.display = "block"
+          console.log(this.index);
+      }
+  }
+ </script>
+</body>
+</html>

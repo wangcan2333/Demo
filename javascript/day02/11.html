@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p>hello world</p>
+    <p>hello world</p>
+    <p>hello world</p>
+    <p>hello world</p>
+    <button id="btn">btn</button>
+    <script>    
+     var p = document.getElementByIdTagName("p");
+    //  p[0].innerHTML = "change";   
+    var btn =document.getElementById("btn");
+    btn.onclick = function(){
+        for(let i=0;i<p.length;i++){
+            p[i].innerHTML = "change"
+        }
+    }
+    </script>
+</body>
+</html>
